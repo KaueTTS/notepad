@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 100vh;
+    height:100vh;
     font-family: sans-serif;
     overflow-y: hidden;
 }
@@ -15,7 +15,7 @@ body {
 textarea {
     resize: none;
     height: 100%;
-    width: 109%;
+    width: 100%;
     border: none;
     padding: 10px 3px;
     font-family: inherit;
@@ -24,4 +24,21 @@ textarea {
 
 textarea:focus {
     outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

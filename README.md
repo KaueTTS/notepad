@@ -17,12 +17,14 @@
 
 ## Tecnologias
 
-<img width="140px" src="https://skillicons.dev/icons?i=javascript,electron" />
+<img width="140px" src="https://skillicons.dev/icons?i=javascript,electron,html,css" />
 
 ## Como utilizar o projeto
 
 <p>1. Precisamos abrir o projeto no nosso VsCode.</p>
-<p>2. Rodar o npm install electron --save-dev no terminal da IDE.</p>
+<p>2. Instalar o npm no terminal com o comando npm install.</p>
+<p>3. Rode o npm install electron --save-dev no terminal da IDE.</p>
+<p>4. Rode npx electronmon . no terminal para abrir o notepad.</p>
 
 ## Desenvolvedor
 
