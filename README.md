@@ -1,7 +1,7 @@
 <h1 align="center">NOTEPAD</h1>
 
 <p align="center">
-<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20ANDAMENTO&color=0065fd&style=for-the-badge"/>
 </p>
 
 ### Tópicos
@@ -17,7 +17,9 @@
 
 ## Tecnologias
 
-<img width="140px" src="https://skillicons.dev/icons?i=javascript,electron,html,css" />
+<div width="140px">
+    <img src="https://skillicons.dev/icons?i=javascript,electron,html,css" />
+</div>
 
 ## Como utilizar o projeto
 

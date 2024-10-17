@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require("electron");
+const createMenu = require("./helpers/createMenu");
 
 let mainWindow;
 const createWindow = () => {
@@ -6,7 +7,7 @@ const createWindow = () => {
         width: 800,
         height: 600,
     });
-
+    //createMenu(mainWindow)
     mainWindow.loadFile("index.html");
 }
 
