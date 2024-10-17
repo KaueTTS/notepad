@@ -23,6 +23,7 @@ function createMenu(mainWindow) {
                 ] 
             : []),
 
+        // Aba File
         {
             label: "File",
             submenu: [
