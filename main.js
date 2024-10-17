@@ -7,10 +7,19 @@ const createWindow = () => {
         height: 600,
     });
 
-    mainWindow.loadFile("index.html")
+    mainWindow.loadFile("index.html");
 }
 
 
 app.whenReady().then(() => {
     createWindow();
+})
+
+app.on("window-all-closed", () => {
+    if (process.platform !== "darwin") {
+        app.quit();
+    }
+    app.on("active", () => {
+        if (BrowserWindow.getAllWindows().length === 0) createWindow();
+    })
 })
