@@ -7,7 +7,7 @@ const createWindow = () => {
         width: 800,
         height: 600,
     });
-    //createMenu(mainWindow)
+    createMenu(mainWindow)
     mainWindow.loadFile("index.html");
 }
 
