@@ -40,6 +40,8 @@ function createMenu(mainWindow) {
                 },
             ],
         },
+
+        // Aba edit
         {
             label: "Edit",
             submenu: [
@@ -63,6 +65,26 @@ function createMenu(mainWindow) {
                 : [{ role: "delete" }, { type: "separator"}, { role: "selectAll" }])
             ],
         },
+
+        // aba view
+        {
+            label: "View",
+            submenu: [
+                { role: "reload" },
+                { role: "forceReload" },
+                { type: "separator" },
+                { role: "resetZoom" },
+                { role: "zoomIn" },
+                { role: "zoomOut" },
+                { type: "separator" },
+                { role: "togglefullscreen" }
+            ],
+        },
+
+        // aba window
+        // {
+        //     label: "Window"
+        // },
     ]);
 
     Menu.setApplicationMenu(menu);
