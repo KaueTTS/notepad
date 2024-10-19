@@ -18,7 +18,7 @@ Notepad do windows utilizando tecnologias ageis.
 ## Tecnologias
 
 <div width="140px">
-    <img src="https://skillicons.dev/icons?i=javascript,electron,html,css" />
+    <img src="https://skillicons.dev/icons?i=javascript,electron,html,css,vscode" />
 </div>
 
 ## Como utilizar o projeto
