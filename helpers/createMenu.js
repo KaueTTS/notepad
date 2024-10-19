@@ -1,7 +1,8 @@
-const { app, Menu } = require("electron");
+const { app, Menu } = require("electron")
+const openFile = require("./openFile")
 
 function createMenu(mainWindow) {
-    const isMac = process.platform === "darwin";
+    const isMac = process.platform === "darwin"
     
     const menu = Menu.buildFromTemplate([
         ...(isMac
@@ -31,7 +32,7 @@ function createMenu(mainWindow) {
                 {
                     label: "Open file",
                     accelerator: "CmdOrCtrl+O",
-                    click: () => console.log("open file clicked"),
+                    click: () => openFile(mainWindow),
                 },
                 {
                     label: "Save file",
@@ -107,9 +108,9 @@ function createMenu(mainWindow) {
                 }
             ],
         }
-    ]);
+    ])
 
-    Menu.setApplicationMenu(menu);
+    Menu.setApplicationMenu(menu)
 }
 
-module.exports = createMenu;
+module.exports = createMenu

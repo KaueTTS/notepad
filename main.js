@@ -1,5 +1,5 @@
-const { app, BrowserWindow } = require("electron");
-const createMenu = require("./helpers/createMenu");
+const { app, BrowserWindow } = require("electron")
+const createMenu = require("./helpers/createMenu")
 
 let mainWindow;
 const createWindow = () => {
@@ -8,19 +8,19 @@ const createWindow = () => {
         height: 600,
     });
     createMenu(mainWindow)
-    mainWindow.loadFile("index.html");
+    mainWindow.loadFile("index.html")
 }
 
 
 app.whenReady().then(() => {
-    createWindow();
+    createWindow()
 })
 
 app.on("window-all-closed", () => {
     if (process.platform !== "darwin") {
-        app.quit();
+        app.quit()
     }
     app.on("active", () => {
-        if (BrowserWindow.getAllWindows().length === 0) createWindow();
+        if (BrowserWindow.getAllWindows().length === 0) createWindow()
     })
 })
