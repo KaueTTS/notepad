@@ -13,7 +13,7 @@
 
 ## Descrição do projeto
 
-<p>Notepad do windows utilizando tecnologias ageis.</p>
+Notepad do windows utilizando tecnologias ageis.
 
 ## Tecnologias
 
@@ -23,10 +23,10 @@
 
 ## Como utilizar o projeto
 
-<p>1. Precisamos abrir o projeto no nosso VsCode.</p>
-<p>2. Instalar o npm no terminal com o comando npm install.</p>
-<p>3. Rode o npm install electron --save-dev no terminal da IDE.</p>
-<p>4. Rode npx electronmon . no terminal para abrir o notepad.</p>
+**1.** Precisamos abrir o projeto no nosso VsCode.<br>
+**2.** Instalar o npm no terminal com o comando `npm install`.<br>
+**3.** Rode o `npm install electron --save-dev` no terminal da IDE.<br>
+**4.** Rode `npx electronmon .` no terminal para abrir o notepad.<br>
 
 ## Desenvolvedor
 
