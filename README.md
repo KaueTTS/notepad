@@ -28,7 +28,7 @@ Notepad do windows utilizando tecnologias ageis.
 **3.** Rode o `npm install electron --save-dev` no terminal da IDE.<br>
 **4.** Rode `npx electronmon .` no terminal para abrir o notepad.<br>
 
-## Desenvolvedor
+## Colaboradores
 
-| [<img src="https://avatars.githubusercontent.com/u/69527468?v=4" width=115><br><sub>Kauê Bertaze de Oliveira</sub>](https://github.com/KaueTTS)<br><sub>Full Stack</sub> |
+| [<img src="https://avatars.githubusercontent.com/u/69527468?v=4" width=115><br><sub>Kauê Bertaze de Oliveira</sub>](https://github.com/KaueTTS)<br><sub>Developer Full Stack</sub> |
 | :---:
