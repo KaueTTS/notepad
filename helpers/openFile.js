@@ -11,7 +11,7 @@ async function openFile(mainWindow) {
                 console.error(err)
                 return
             }
-            mainWindow.webContens.send("file-opened", data)
+            mainWindow.webContents.send("file-opened", data)
         })
     }
 }
