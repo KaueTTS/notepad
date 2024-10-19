@@ -92,6 +92,21 @@ function createMenu(mainWindow) {
                 : [{ role: "close" }]),
             ],
         },
+
+        // aba help
+        {
+            role: "help",
+            submenu: [ 
+                {
+                    label: "About",
+                    click: () => console.log("About clicked"),
+                },
+                {
+                    label: "Build more",
+                    click: () => console.log("Build more clicked"),
+                }
+            ],
+        }
     ]);
 
     Menu.setApplicationMenu(menu);
