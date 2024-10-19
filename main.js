@@ -1,6 +1,7 @@
-const { app, BrowserWindow } = require("electron")
+const { app, BrowserWindow, ipcMain } = require("electron")
 const createMenu = require("./helpers/createMenu")
 const path = require("node:path")
+const saveFile = require("./helpers/saveFile")
 
 let mainWindow;
 const createWindow = () => {
@@ -17,6 +18,7 @@ const createWindow = () => {
 
 
 app.whenReady().then(() => {
+    ipcMain.handle("save-file", saveFile)
     createWindow()
 })
 
