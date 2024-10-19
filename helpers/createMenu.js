@@ -1,6 +1,7 @@
 const { app, Menu } = require("electron")
 const openFile = require("./openFile")
 const saveFile = require("./saveFile")
+const createAboutWindow = require("./createAboutWindow")
 
 function createMenu(mainWindow) {
     const isMac = process.platform === "darwin"
@@ -101,7 +102,7 @@ function createMenu(mainWindow) {
             submenu: [ 
                 {
                     label: "About",
-                    click: createAboutWindow,
+                    click: () => createAboutWindow(),
                 },
                 {
                     label: "Build more",

@@ -25,6 +25,7 @@ app.whenReady().then(() => {
 app.on("window-all-closed", () => {
     if (process.platform !== "darwin") {
         app.quit()
+        mainWindow = null
     }
     app.on("active", () => {
         if (BrowserWindow.getAllWindows().length === 0) createWindow()
