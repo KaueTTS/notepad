@@ -1,5 +1,6 @@
 const { app, Menu } = require("electron")
 const openFile = require("./openFile")
+const saveFile = require("./saveFile")
 
 function createMenu(mainWindow) {
     const isMac = process.platform === "darwin"
@@ -37,7 +38,7 @@ function createMenu(mainWindow) {
                 {
                     label: "Save file",
                     accelerator: "CmdOrCtrl+S",
-                    click: () => console.log("save file clicked"),
+                    click: () => console.log("Corrigir click"),
                 },
             ],
         },
@@ -100,12 +101,15 @@ function createMenu(mainWindow) {
             submenu: [ 
                 {
                     label: "About",
-                    click: () => console.log("About clicked"),
+                    click: createAboutWindow,
                 },
                 {
                     label: "Build more",
-                    click: () => console.log("Build more clicked"),
-                }
+                    click: async () => {
+                        const { shell } = require("electron")
+                        await shell.openExternal("https://electronjs.org")
+                    },
+                },
             ],
         }
     ])
