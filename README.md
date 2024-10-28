@@ -1,7 +1,9 @@
 <h1 align="center">NOTEPAD</h1>
 
 <p align="center">
-<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=green&style=for-the-badge"/>
+
+<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+
 </p>
 
 > 🔔 ***Nota:** Esse projeto pode ter alterações no futuro.*
