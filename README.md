@@ -1,19 +1,23 @@
 <h1 align="center">NOTEPAD</h1>
 
 <p align="center">
-<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20ANDAMENTO&color=GREEN&style=for-the-badge"/>
+
+<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+
 </p>
+
+> 🔔 ***Nota:** Esse projeto pode ter alterações no futuro.*
 
 ### Tópicos
 
 - [Descrição do projeto](#descrição-do-projeto)
 - [Tecnologias](#tecnologias)
 - [Como utilizar o projeto](#como-utilizar-o-projeto)
-- [Desenvolvedor](#desenvolvedor)
+- [Colaboradores](#colaboradores)
 
 ## Descrição do projeto
 
-Notepad do windows utilizando tecnologias ageis.
+Este projeto recria o Notepad (Bloco de Notas) do Windows. O objetivo é simular a experiência do Notepad clássico, com interface simples e intuitiva, porém funcionando em qualquer sistema operacional (Windows, macOS e Linux).
 
 ## Tecnologias
 
@@ -23,10 +27,21 @@ Notepad do windows utilizando tecnologias ageis.
 
 ## Como utilizar o projeto
 
-**1.** Precisamos abrir o projeto no nosso VsCode.<br>
-**2.** Instalar o npm no terminal com o comando `npm install`.<br>
-**3.** Rode o `npm install electron --save-dev` no terminal da IDE.<br>
-**4.** Rode `npx electronmon .` no terminal para abrir o notepad.<br>
+```
+< INSTALADORES >
+
+npm install
+npm install electron --save-dev
+
+< INICIADORES >
+cd ./notepad
+npx electronmon .
+```
+
+> **1.** Abra o projeto no VsCode.<br>
+> **2.** Instale o npm no terminal com o comando `npm install`.<br>
+> **3.** Rode o `npm install electron --save-dev` no terminal da IDE.<br>
+> **4.** Rode `npx electronmon .` no terminal para abrir o notepad.<br>
 
 ## Colaboradores
 
