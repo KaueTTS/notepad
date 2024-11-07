@@ -12,6 +12,7 @@
 
 - [Descrição do projeto](#descrição-do-projeto)
 - [Tecnologias](#tecnologias)
+- [Projeto em funcionamento](#projeto-em-funcionamento)
 - [Como utilizar o projeto](#como-utilizar-o-projeto)
 - [Colaboradores](#colaboradores)
 
@@ -24,6 +25,14 @@ Este projeto recria o Notepad (Bloco de Notas) do Windows. O objetivo é simular
 <div width="140px">
     <img src="https://skillicons.dev/icons?i=javascript,electron,html,css,vscode" />
 </div>
+
+## Projeto em funcionamento
+
+Clique na imagem abaixo para assistir ao tutorial em vídeo!
+
+[![Assista ao tutorial](image.png "Como utilizar esse projeto na sua máquina")](semvideo.com)
+
+**Descrição**: Este vídeo cobre todo o processo para visualizar o projeto em funcionamento, do início ao fim.
 
 ## Como utilizar o projeto
 
