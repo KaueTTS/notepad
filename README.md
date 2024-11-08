@@ -38,7 +38,6 @@ Clique na imagem abaixo para assistir ao tutorial em vídeo!
 
 ```
 < INSTALADORES >
-
 npm install
 npm install electron --save-dev
 
