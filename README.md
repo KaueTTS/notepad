@@ -30,7 +30,7 @@ Este projeto recria o Notepad (Bloco de Notas) do Windows. O objetivo é simular
 
 Clique na imagem abaixo para assistir ao tutorial em vídeo!
 
-[![Assista ao tutorial](image.png "Como utilizar esse projeto na sua máquina")](semvideo.com)
+[![Assista ao tutorial](image.png "Como utilizar esse projeto na sua máquina")](https://drive.google.com/file/d/1hqZV1QCOMSwUp57iClJmogbcRFGyBoDB/view?usp=sharing)
 
 **Descrição**: Este vídeo cobre todo o processo para visualizar o projeto em funcionamento, do início ao fim.
 
@@ -38,7 +38,6 @@ Clique na imagem abaixo para assistir ao tutorial em vídeo!
 
 ```
 < INSTALADORES >
-
 npm install
 npm install electron --save-dev
 
