@@ -6,7 +6,7 @@
 
 </p>
 
-> ![NOTE]
+> [!NOTE]
 > *Esse projeto pode ter alterações no futuro.*
 
 ### Tópicos
