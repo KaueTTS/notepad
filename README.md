@@ -6,7 +6,8 @@
 
 </p>
 
-> 🔔 ***Nota:** Esse projeto pode ter alterações no futuro.*
+> ![NOTE]
+> *Esse projeto pode ter alterações no futuro.*
 
 ### Tópicos
 
