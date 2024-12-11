@@ -39,7 +39,15 @@ function createMenu(mainWindow) {
                 {
                     label: "Save file",
                     accelerator: "CmdOrCtrl+S",
-                    click: () => console.log("Corrigir click"),
+                    click: () => {
+                        const textArea = mainWindow.webContents.executeJavaScript(`
+                            document.getElementById("text-area").value
+                        `);
+
+                        textArea.then((content) => {
+                            saveFile(null, content);
+                        })
+                    },
                 },
             ],
         },
