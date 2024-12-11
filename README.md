@@ -24,7 +24,7 @@ Este projeto recria o Notepad (Bloco de Notas) do Windows. O objetivo é simular
 ## Tecnologias
 
 <div width="140px">
-    <img src="https://skillicons.dev/icons?i=javascript,electron,html,css,vscode" />
+    <img src="https://skillicons.dev/icons?i=javascript,electron,html,css,vscode,nodejs" />
 </div>
 
 ## Projeto em funcionamento
