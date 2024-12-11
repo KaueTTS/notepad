@@ -28,16 +28,16 @@ function createMenu(mainWindow) {
 
         // Aba File
         {
-            label: "File",
+            label: "Arquivo",
             submenu: [
-                isMac ? { role: "close" } : { role: "quit" },
+                isMac ? { label: "Fechar", role: "close" } : { label: "Fechar", role: "quit" },
                 {
-                    label: "Open file",
+                    label: "Abrir arquivo",
                     accelerator: "CmdOrCtrl+O",
                     click: () => openFile(mainWindow),
                 },
                 {
-                    label: "Save file",
+                    label: "Salvar arquivo",
                     accelerator: "CmdOrCtrl+S",
                     click: () => {
                         const textArea = mainWindow.webContents.executeJavaScript(`
@@ -54,14 +54,14 @@ function createMenu(mainWindow) {
 
         // Aba edit
         {
-            label: "Edit",
+            label: "Editar",
             submenu: [
-                { role: "undo" },
-                { role: "redo" },
+                { label: "Desfazer", role: "undo" },
+                { label: "Refazer", role: "redo" },
                 { type: "separator" },
-                { role: "cut" },
-                { role: "copy" },
-                { role: "paste" },
+                { label: "Cortar", role: "cut" },
+                { label: "Copiar", role: "copy" },
+                { label: "Colar", role: "paste" },
                 ...(isMac
                     ? [
                         { role: "pasteAndMatchStyle" },
@@ -73,47 +73,46 @@ function createMenu(mainWindow) {
                             submenu: [{ role: "startSpeaking" }, { role: "stopSpeaking" }],
                         },
                     ]
-                : [{ role: "delete" }, { type: "separator"}, { role: "selectAll" }])
+                : [{ label: "Deletar", role: "delete" }, { type: "separator"}, { label: "Selecionar tudo", role: "selectAll" }])
             ],
         },
 
         // aba view
         {
-            label: "View",
+            label: "Visualizar",
             submenu: [
-                { role: "reload" },
-                { role: "forceReload" },
+                { label: "Recarregar", role: "reload" },
+                { label: "Forçar recarga", role: "forceReload" },
                 { type: "separator" },
-                { role: "resetZoom" },
-                { role: "zoomIn" },
-                { role: "zoomOut" },
+                { label: "Resetar zoom", role: "resetZoom" },
+                { label: "Aumentar zoom", role: "zoomIn", accelerator: "CmdOrCtrl+="},
+                { label: "Diminuir zoom", role: "zoomOut" },
                 { type: "separator" },
-                { role: "togglefullscreen" }
+                { label: "Tela cheia", role: "togglefullscreen" }
             ],
         },
 
         // aba window
         {
-            label: "Window",
+            label: "Janela",
             submenu: [
-                { role: "minimize" },
-                { role: "zoom" },
+                { label: "Minimizar", role: "minimize" },
                 ...(isMac
                     ? [{ type: "separator" }, { role: "front" }, { type: "separator" }, { role: "window" }]
-                : [{ role: "close" }]),
+                : [{ label: "Fechar", role: "close" }]),
             ],
         },
 
         // aba help
         {
-            role: "help",
+            label: "Ajuda", role: "help",
             submenu: [ 
                 {
-                    label: "About",
+                    label: "Sobre",
                     click: () => createAboutWindow(),
                 },
                 {
-                    label: "Build more",
+                    label: "Linguagem",
                     click: async () => {
                         const { shell } = require("electron")
                         await shell.openExternal("https://electronjs.org")
