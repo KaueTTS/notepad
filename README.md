@@ -6,8 +6,8 @@
 
 </p>
 
-> [!NOTE]
-> *Esse projeto pode ter alterações no futuro.*
+> [!IMPORTANT]
+> *Esse projeto está concluído.*
 
 ### Tópicos
 
